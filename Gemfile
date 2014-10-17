@@ -1,17 +1,32 @@
-source 'http://rubygems.org'
+PATH
+  remote: .
 
-gem 'rails', '3.1.3'
+GEM
+  remote: https://rubygems.org/
+  specs:
+    codecov (0.0.1)
+      json
+      simplecov
+      url
+    docile (1.1.5)
+    json (1.8.1)
+    metaclass (0.0.4)
+    mocha (1.1.0)
+      metaclass (~> 0.0.1)
+    multi_json (1.10.1)
+    rake (10.3.2)
+    simplecov (0.9.1)
+      docile (~> 1.1.0)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.8.0)
+    simplecov-html (0.8.0)
+    url (0.3.2)
 
-gem 'jquery-rails'
+PLATFORMS
+  ruby
 
-group :test, :development do
-  gem 'rspec-rails', '2.9.0'
-  gem 'guard-rsepc', '0.5.5'
-  gem 'guard-spork', '0.3.2'
-  gem 'spork', '0.9.0'
-  gem 'simplecov', require: false
-end
-
-group :production do
-  gem 'pg', '0.12.2'
-end
+  codecov
+DEPENDENCIES
+  mocha
+  rake
+  simplecov
